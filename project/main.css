@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Indie+Flower&family=Josefin+Slab&display=swap');
+body{
+    margin:0;
+    padding:0;
+}
+
+header{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7fc5b8; 
+    background-size: cover;
+    
+}
+
+header h1{
+    font-size: 300px;
+    font-family: 'Sacramento', cursive;
+    color: #f3818a;
+}
+
+.logo{
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: #7fc5b8;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+nav{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    font-family: 'Sacramento', cursive;
+}
+
+nav ul{
+    
+    list-style: none;
+    background:rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color:#fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul{
+    background: #000;
+    color: #f3818a;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#f3818a;
+    font-size: 30px;
+}
+
+.menu-icon{
+    width: 100%;
+    background:#000;
+    text-align: right;
+    box-sizing: border-box;
+    padding:15px 24px;
+    cursor: pointer;
+    color:#fff;
+    display: none;
+}
+
+.java{
+    height: 300vh;
+    display: flex;
+}
+
+.java-title{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0!important;
+    font-family: 'Amatic SC', cursive;
+}
+
+.java-title a{
+    text-decoration: none;
+    color: black;
+}
+
+.java-title p{
+    font-size: 20px;
+}
+
+.java-title-pages{
+    width: 50%;
+}
+
+.java-title-pages div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.java-title-pages div> p{
+    width: 80%;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Josefin Slab', serif;
+    text-align: justify;
+}
+
+#proj1{
+    background-color: #e27d5f;
+    color: #502112;
+}
+
+#proj2{
+    background-color: #85cdcb;
+    color: #0b3837;
+}
+
+#proj3{
+    background-color: #c38d9d;
+    color: #5a182c;
+}
+
+#proj1 h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#proj2 h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#proj3 h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+/*Section 2 here*/
+
+.spring{
+    height: 200vh;
+    display: flex;
+}
+
+.spring-title{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0!important;
+    font-family: 'Amatic SC', cursive;
+}
+
+.spring-title a{
+    text-decoration: none;
+    color: black;
+}
+
+.spring-title p{
+    font-size: 20px;
+}
+
+.spring-title-pages{
+    width: 50%;
+}
+
+.spring-title-pages div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.spring-title-pages div> p{
+    width: 80%;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Josefin Slab', serif;
+    text-align: justify;
+}
+
+#proj4{
+    background-color: #e8a87b;
+    color: #3d2310;
+}
+
+
+#proj5{
+    background-color: #41b3a3;
+    color: #0c2723;
+}
+
+#proj4 h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#proj5 h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1079px) {
+
+    header h1{
+        font-size: 140px;
+    }
+
+    .java{
+        flex-direction: row;
+    }
+
+    .java-title-pages div> p{
+        width: 80%;
+        font-size: 14px;
+        line-height: 10px;
+    }
+
+    .java-title-pages h1{
+        font-size: 35px !important;
+    }
+
+    .spring-title-pages h1{
+        font-size: 35px !important;
+    }
+
+    .spring{
+        flex-direction: row;
+    }
+
+    .spring-title-pages div> p{
+        width: 80%;
+        font-size: 14px;
+        line-height: 10px;
+    }
+
+    .logo{
+        position: fixed;
+        top:0;
+        margin-top:16px;
+    }
+
+    nav ul{
+        max-height: 0px;
+        background: #000;
+    }
+
+    nav.black ul{
+        background: #000;
+    }
+
+    .showing{
+        max-height: 40em;
+    }
+
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+}
+
